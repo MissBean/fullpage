@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>整屏滚动实例</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.fp-auto-height {
+	padding: 50px 0;
+	background:#000;
+	color:#fff;
+}
+.anchor{
+	width:30px;
+	position:fixed;
+	top:50%;
+	right:10px;
+	-webkit-transform:translate(0,-50%);
+	transform:translate(0,-50%);
+	z-index:10;
+	/*display:none*/
+}
+.anchor .anchor-item{
+	display:block;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	border:1px solid #F15225;
+	margin-top:20px
+}
+.anchor .anchor-item.active{background-color:#f15225}
+.anchor .anchor-item:first-child{
+	width:24px;
+	height:22px;
+	border-radius:0;
+	border:none;
+	background:url(./img/home.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:-6px;
+	margin-top:0
+}
+.anchor .anchor-item:first-child.active,.anchor .anchor-item:first-child:hover{
+	background:url(./img/home-active.png) no-repeat;
+	background-size:100% 100%
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="dowebok">
+	<article>
+		<div class="section" data-anchor="anchor1">
+			<h3>第一屏</h3>
+			<p>fullPage.js — 项目导航演示</p>
+		</div>
+		<div class="section" data-anchor="anchor2">
+			<h3>第二屏</h3>
+			<p>请查看右边的圆圈</p>
+		</div>
+		<div class="section" data-anchor="anchor3">
+			<h3>第三屏</h3>
+			<p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+		</div>
+		<div class="section" data-anchor="anchor4">
+			<h3>第四屏</h3>
+			<p>这是最后一屏</p>
+		</div>
+		<div class="section fp-auto-height">Auto height</div>
+	</article>
+	<aside class="anchor" id="anchor">
+    <a class="anchor-item" href="#anchor1" data-menuanchor="anchor1"></a>
+    <a class="anchor-item" href="#anchor2" data-menuanchor="anchor2"></a>
+    <a class="anchor-item" href="#anchor3" data-menuanchor="anchor3"></a>
+    <a class="anchor-item" href="#anchor4" data-menuanchor="anchor4"></a>
+</aside>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullpage.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5'],
+		menu: "#anchor"
+	});
+});
+</script>
+
+</body>
+</html>
