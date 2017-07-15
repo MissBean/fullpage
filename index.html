@@ -3,86 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<title>整屏滚动实例</title>
-<link rel="stylesheet" href="css/jquery.fullPage.css">
-<style>
-*{margin:0;padding: 0;}
-.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
-.fp-auto-height {
-	padding: 50px 0;
-	background:#000;
-	color:#fff;
-}
-.anchor{
-	width:30px;
-	position:fixed;
-	top:50%;
-	right:10px;
-	-webkit-transform:translate(0,-50%);
-	transform:translate(0,-50%);
-	z-index:10;
-	/*display:none*/
-}
-.anchor .anchor-item{
-	display:block;
-	width:12px;
-	height:12px;
-	border-radius:50%;
-	border:1px solid #F15225;
-	margin-top:20px
-}
-.anchor .anchor-item.active{background-color:#f15225}
-.anchor .anchor-item:first-child{
-	width:24px;
-	height:22px;
-	border-radius:0;
-	border:none;
-	background:url(./img/home.png) no-repeat;
-	background-size:100% 100%;
-	margin-left:-6px;
-	margin-top:0
-}
-.anchor .anchor-item:first-child.active,.anchor .anchor-item:first-child:hover{
-	background:url(./img/home-active.png) no-repeat;
-	background-size:100% 100%
-}
-</style>
-
+<title>博昂思体验传播</title>
+<link rel="stylesheet" href="css/jquery.fullpage.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<div id="dowebok">
-		<div class="section" data-anchor="anchor1">
-			<h3>第一屏</h3>
-			<p>fullPage.js — 项目导航演示</p>
+<div id="fullpage">
+		<div class="header">
+				<div class="w996 clearfix">
+					<img class="logo fl" src="img/logo.png">
+					<img class="fr call" src="img/call.png">
+					<div class="nav">
+						<a href="#anchor1" data-menuanchor="anchor1">首页</a>
+						<a href="#anchor2" data-menuanchor="anchor2">我们的业务</a>
+						<a href="#anchor3" data-menuanchor="anchor3">关于我们</a>
+					</div>
+					
+				</div>
 		</div>
-		<div class="section" data-anchor="anchor2">
-			<h3>第二屏</h3>
-			<p>请查看右边的圆圈</p>
+		<div class="section section1" data-anchor="anchor1">
+			
+			<aside class="drop">
+        <a href="#anchor2" data-menuanchor="anchor2">
+            <span class="arrow"></span>
+        </a>
+    	</aside>
 		</div>
-		<div class="section" data-anchor="anchor3">
-			<h3>第三屏</h3>
-			<p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+		<div class="section section2" data-anchor="anchor2">
+			<h3 class="title">我们的业务</h3>
+			<h4>可跨渠道、跨终端帮助客户完成营销全过程整合管理</h4>
+			<div class="wrap">
+				<ul class="work-list clearfix">
+					<li class="work-item item1">
+						<h5>云端营销</h5>
+						<p>互联网互动体验，无处不在的精彩</p>
+						<a href="" class="more">more</a>
+					</li>
+					<li class="work-item item2">
+						<h5>活动管理</h5>
+						<p>您的信任，我们的责任。 </p>
+						<a href="" class="more">more</a>
+					</li>
+					<li class="work-item item3">
+						<h5>精致内容订制解决方案</h5>
+						<p>为企业提供全方位的精准内容展示</p>
+						<a href="" class="more">more</a>
+					</li>
+					<li class="work-item item4">
+						<h5>餐饮管理</h5>
+						<p>全方位餐饮管理及内容服务订制  解决方案提供商 </p>
+						<a href="" class="more">more</a>
+					</li>
+					<li class="work-item item5">
+						<h5>贵宾服务 </h5>
+						<p>专业团队提供VIP行程策划 及执行服务。 </p>
+						<a href="" class="more">more</a>
+					</li>
+					<li class="work-item item6">
+						<h5>多媒体影视</h5>
+						<p>会讲故事的多媒体策划制作团队 </p>
+						<a href="" class="more">more</a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
-		<div class="section" data-anchor="anchor4">
-			<h3>第四屏</h3>
-			<p>这是最后一屏</p>
+		<div class="section section3" data-anchor="anchor3">
+			<h3 class="title">关于我们</h3>
+			<div class="about-us wrap">
+				<div class="about-hd">
+					<a href="javascript:;" class="btn active">公司介绍</a>
+					<a href="javascript:;" class="btn">联系我们</a>
+				</div>
+				<div class="about-bd">
+					<div class="about-item active">
+						<p>在北京市注册成立于2007年，并陆续在上海，广州分别设置办公室，2012年在香港注册博昂思香港有限公司。2015年在成都注册 成都博昂思公司。</p>
+						<p>公司核心团队成员，具备丰富的行业背景，在整合营销方面拥有超过10年的经验。</p>
+						<p>服务客户创意设计、策划、实施各类商业活动，帮助大型企业客户，政府机构，在华外商企业提供活动策划及管理实施，展览展示，多媒体影视，创意设计服务等全方面的服务工作。</p>
+						<p>拥有为国际一流企业及行业服务的经验，历年来主要服务对象，集中在大型跨国集团、信息科技行业、医药医疗、会计师咨询、通信信息技术等领域。</p>
+					</div>
+					<div class="about-item about-item2">联系我们联系我们联系我们联系我们</div>
+				</div>
+			</div>
+
 		</div>
-		<div class="section fp-auto-height">Auto height</div>
-	<aside class="anchor" id="anchor">
-    <a class="anchor-item" href="#anchor1" data-menuanchor="anchor1"></a>
-    <a class="anchor-item" href="#anchor2" data-menuanchor="anchor2"></a>
-    <a class="anchor-item" href="#anchor3" data-menuanchor="anchor3"></a>
-    <a class="anchor-item" href="#anchor4" data-menuanchor="anchor4"></a>
-</aside>
+		<div class="section section4 fp-auto-height">
+			<div class="wrap770 clearfix">
+				<img src="./img/logo-bottom.png">
+				<div class="list fr">
+					<h4>关于我们</h4>
+					<p><a href="">公司介绍</a></p>
+					<p><a href="">联系我们</a></p>
+				</div>
+				<div class="list fr">
+					<h4>我们的业务</h4>
+					<p><a href="">云端营销</a></p>
+					<p><a href="">活动管理</a></p>
+					<p><a href="">精致内容订制解决方案</a></p>
+					<p><a href="">餐饮管理</a></p>
+					<p><a href="">贵宾服务</a></p>
+					<p><a href="">多媒体影视</a></p>
+				</div>
+			</div>
+			<div class="copyright">Copyright (©) 2016-2017 | All Rights Reserved 京ICP备09100175号-1</div>
+		</div>
+	<!-- <aside class="anchor" id="anchor">
+    <a class="anchor-item" href="#anchor1" data-menuanchor="anchor1">首页</a>
+    <a class="anchor-item" href="#anchor2" data-menuanchor="anchor2">我们的业务</a>
+    <a class="anchor-item" href="#anchor3" data-menuanchor="anchor3">关于我们</a>
+	</aside> -->
 </div>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullpage.js"></script>
 <script>
 $(function(){
-	$('#dowebok').fullpage({
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+	$('#fullpage').fullpage({
+		//sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
 		anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5'],
 		menu: "#anchor"
 	});
